@@ -13,7 +13,7 @@ function App() {
 
   // Constants
   const clientId = '017211e68cc247cca8b8f73233cf6d5d';
-  const redirectUri = 'http://localhost:3000/callback';
+  const redirectUri = 'https://jammingplay.netlify.app/callback';
 
   // Scopes required for playlist creation
   const scopes = ['playlist-modify-public', 'playlist-modify-private'];
