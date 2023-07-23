@@ -9,7 +9,7 @@ function App() {
   const [selectedTracks, setSelectedTracks] = useState([]);
   const [accessToken, setAccessToken] = useState('');
   const [searchResults, setSearchResults] = useState([]);
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // Track login state
+  const [isLoggedIn, setIsLoggedIn] = useState(false); 
 
   // Constants
   const clientId = '017211e68cc247cca8b8f73233cf6d5d';
