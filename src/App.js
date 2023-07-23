@@ -15,12 +15,15 @@ function App() {
   const clientId = '017211e68cc247cca8b8f73233cf6d5d';
   const redirectUri = 'http://localhost:3000/callback';
 
+  // Scopes required for playlist creation
+  const scopes = ['playlist-modify-public', 'playlist-modify-private'];
+
   // Handle access token retrieval from URL and login state update
   useEffect(() => {
     const hashParams = window.location.hash.substr(1);
     const urlParams = new URLSearchParams(hashParams);
     const token = urlParams.get('access_token');
-
+  
     if (token) {
       setAccessToken(token);
       setIsLoggedIn(true);
@@ -30,13 +33,15 @@ function App() {
 
   // Handle Spotify login
   const handleLogin = () => {
-    const scope = 'user-read-private user-read-email';
     const responseType = 'token';
-
+  
+    // Construct the scope string by joining the scopes array with spaces
+    const scopeString = scopes.join(' ');
+  
     const authUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(
       redirectUri
-    )}&scope=${encodeURIComponent(scope)}&response_type=${responseType}`;
-
+    )}&scope=${encodeURIComponent(scopeString)}&response_type=${responseType}`;
+  
     window.location.href = authUrl;
   };
 
@@ -93,12 +98,15 @@ function App() {
         {/* SearchBar component */}
         <SearchBar onSearch={searchSpotify} isLoggedIn={isLoggedIn} login={handleLogin} />
       </div>
-      <div className="bottom-container">
-        {/* SearchResults component */}
-        <SearchResults tracks={searchResults} onAdd={handleAdd} />
-        {/* Playlist component */}
-        <Playlist selectedTracks={selectedTracks} onRemove={handleRemove} />
-      </div>
+      {searchResults.length > 0 && (
+        <div className="bottom-container">
+          {/* SearchResults component */}
+          <SearchResults tracks={searchResults} onAdd={handleAdd}/>
+          {/* Playlist component */}
+          <Playlist selectedTracks={selectedTracks} setSelectedTracks={setSelectedTracks} onRemove={handleRemove} accessToken={accessToken} />
+        </div>
+      )}
+      
     </div>
   );
 }

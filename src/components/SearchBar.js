@@ -22,8 +22,8 @@ function SearchBar({ onSearch, isLoggedIn, login }) {
     <div className="SearchBar">
       <form onSubmit={handleSearch}>
         <input type="text" name="searchTerm" placeholder="Search..." />
-        <button type="button" onClick={handleButtonClick}>
-          {isLoggedIn ? 'Search' : 'Log in'}
+        <button type="button" onClick={handleButtonClick}  className={`my-button ${isLoggedIn ? 'logged-in' : 'not-logged-in'}`}>
+          {isLoggedIn ? 'Search' : 'Log in to your spotify account'}
         </button>
       </form>
     </div>

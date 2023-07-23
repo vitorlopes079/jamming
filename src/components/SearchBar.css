@@ -38,6 +38,11 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.SearchBar .not-logged-in {
+    height: 55px;
+    
+}
+
 .SearchBar button:hover {
     background-color: #f03a47; 
     color: #fff;
