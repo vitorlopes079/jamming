@@ -19,7 +19,7 @@ const LandingPage = () => {
       <div className="textContainer">
         <p>
           Unfortunately, due to Spotify API's guidelines, we can't open the
-          application to the public just yet. But if you want to use our clean
+          application to the public. But if you want to use our clean
           and elegant interface to make your favorites playlists there's good
           news! You can still gain access. All we need is your name and email
           address. Once you provide these details, we'll add you to our user
