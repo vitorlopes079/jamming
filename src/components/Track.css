@@ -1,18 +1,18 @@
-.track{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-    background-color: rgba(70, 114, 137, 0.3);
-    padding: 12px;
-    border-radius: 5px;
-    height: 80px;
-    width: 100%;
-    
+.track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color: white;
+  background-color: rgba(49, 50, 51, 0.3);
+  padding: 12px;
+  border-radius: 5px;
+  height: 80px;
+  min-width: 350px;
+  width: 100%;
 }
 
-.track h3{
-
+.track h3 {
   margin: 0;
 }
 
@@ -20,35 +20,23 @@
   margin: 5px 0 16px 0;
 }
 
-
-.track .plus-symbol {
-  
-  padding: 1px;
-  width: 19px;
-  height: 19px;
-  font-size: 19px;
-  background-color: #1f3a6d;
-  color: white;
-  border-radius: 50%;
+.plus,
+.minus {
   cursor: pointer;
-  display: flex; /* Use flexbox to center the plus symbol */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
-   /* Add absolute positioning to the plus symbol */
-  top: 50%; /* Move the plus symbol to the vertical center */
-  right: 12px; /* Adjust the distance from the right side of the .track container */
-  transform: translateY(-50%); /* Adjust the vertical position to center the plus symbol */
-  flex-shrink: 0;
-  
+  margin-left: 15px;
+  color: white;
 }
 
-
-
-.track .plus-symbol p {
-    margin: 0; 
-    padding-bottom: 2.8px;
-    flex-shrink: 0
-
+@media only screen and (min-width: 450px) and (max-width: 1050px) {
+  .track {
+    min-width: 270px;
   }
+}
 
-  /*  */
+@media only screen and (max-width: 450px) {
+  .track {
+    min-width: 150px;
+
+    font-size: 14px;
+  }
+}

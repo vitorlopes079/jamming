@@ -1,5 +1,7 @@
-import React from 'react';
-import './Track.css';
+import React from "react";
+import "./Track.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 
 function Track(props) {
   const { track, onAdd, onRemove, isRemovable } = props;
@@ -8,12 +10,14 @@ function Track(props) {
     <div className="track">
       <div>
         <h3>{track.name}</h3>
-        <p>{track.artist} | {track.album}</p>
+        <p>
+          {track.artist} | {track.album}
+        </p>
       </div>
       {isRemovable ? (
-        <div className="minus-symbol" onClick={() => onRemove(track.id)}><p>-</p></div>
+        <FontAwesomeIcon className="minus" icon={faMinus} onClick={() => onRemove(track.id)} />
       ) : (
-        <div className="plus-symbol" onClick={() => onAdd(track)}><p>+</p></div>
+        <FontAwesomeIcon className="plus" icon={faPlus} onClick={() => onAdd(track)} />
       )}
     </div>
   );

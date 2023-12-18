@@ -1,0 +1,22 @@
+.logo-bar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 65px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  
+span {
+    color: #1DB954;
+  }
+
+.logoPhoto {
+    height: 65px;
+    
+    
+}
+  

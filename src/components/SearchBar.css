@@ -1,49 +1,76 @@
-.SearchBar{
-   margin: 20px;
+.SearchBar {
+  margin: 20px;
 }
 
-.SearchBar form{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+.SearchBar form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 210px;
 }
 
 .SearchBar input {
-    margin: 40px 20px 20px 20px;
-    width: 200px;
-    height: 30px;
-    font-size: 16px;
-    background-color: rgb(230, 228, 228);
-    border-radius: 10px;
-    border: 2px;
-    border: 2px solid; 
-    outline: none; 
-    padding: 2px 8px 2px 8px;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-.SearchBar button {
-    margin: 20px 20px 20px 20px;
-    font-size: 18px;
-    color: #b9b9b9;
-    width: 150px;
-    background-color: #1f3a6d;
-    border-radius: 10px;
-    border: none;
-    padding: 2px 7px 2px 7px;
-    height: 35px;
-    cursor: pointer;
-    font-family: 'Roboto Condensed', sans-serif;
+  margin: 40px 20px 20px 20px;
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+  background-color: black;
+  border-radius: 20px;
+  border: 2px;
+  border: 2px solid white;
+  outline: none;
+  padding: 2px 8px 2px 8px;
+  font-family: inherit;
+  color: rgb(219, 219, 219);
+  margin-bottom: 25px;
 }
 
 .SearchBar .not-logged-in {
-    height: 55px;
-    
+  height: 55px;
 }
 
-.SearchBar button:hover {
-    background-color: #f03a47; 
-    color: #fff;
+/* CSS */
+.button-37 {
+  background-color: #179142;
+  border: 1px solid #179142;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 25px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 20px;
+}
+
+.button-37:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media only screen and (max-width: 1100px) {
+  .SearchBar input {
+    margin-bottom: 15px;
+  }
+
+  .SearchBar form {
+    height: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .button-37 {
+    padding: 10px 30px;
+  }
 }

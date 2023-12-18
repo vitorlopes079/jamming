@@ -11,9 +11,9 @@ function Tracklist(props) {
         <Track
           key={track.id}
           track={track}
-          onAdd={add} // Use the 'add' prop when rendering in SearchResults
-          onRemove={onRemove} // Use the 'onRemove' prop when rendering in Playlist
-          isRemovable={isRemovable} // Pass the 'isRemovable' prop from the parent component
+          onAdd={add} 
+          onRemove={onRemove} 
+          isRemovable={isRemovable} 
         />
       ))}
     </div>

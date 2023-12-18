@@ -1,53 +1,73 @@
-.Playlist{
-        width: 30%;
-        margin: 0;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
+.Playlist {
+  width: 35%;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
 }
-
-
-
 
 .Playlist input {
-
-        margin: 29px 20px 20px 20px;
-        width: 200px;
-        height: 25px;
-        font-size: 16px;
-        background-color: rgb(230, 228, 228);
-        border-radius: 10px;
-        border: 2px;
-        border: 2px solid; 
-        outline: none; 
-        padding: 2px 8px 2px 8px;
-        font-family: 'Roboto Condensed', sans-serif;
-}
-    
-.Playlist button {              
-    margin: 20px 20px 20px 20px;
-    font-size: 16px;
-    height: 35px;
-    width: 150px;
-    color: #b9b9b9;
-    background-color: #1f3a6d;
-    border-radius: 10px;
-    border: none;
-    padding: 2px 8px 2px 8px;
-    cursor: pointer;
-    font-family: 'Roboto Condensed', sans-serif;
-        
+  margin: 40px 20px 20px 20px;
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+  background-color: black;
+  border-radius: 20px;
+  border: 2px;
+  border: 2px solid white;
+  outline: none;
+  padding: 2px 8px 2px 8px;
+  font-family: inherit;
+  color: rgb(219, 219, 219);
 }
 
-.Playlist button:hover {
-        background-color: #f03a47; 
-        color: #fff;
+.track-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.Playlist .minus-symbol{
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS */
+.button-37 {
+  background-color: #179142;
+  border: 1px solid #179142;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 20px;
+}
+
+.button-37:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+.Playlist .minus-symbol {
   width: 19px;
   height: 19px;
   font-size: 19px;
@@ -61,26 +81,27 @@
   flex-shrink: 0;
   top: 50%; /* Move the plus symbol to the vertical center */
   right: 12px; /* Adjust the distance from the right side of the .track container */
-  transform: translateY(-50%); /* Adjust the vertical position to center the plus symbol */
+  transform: translateY(
+    -50%
+  ); /* Adjust the vertical position to center the plus symbol */
   padding: 1px;
-
-        
 }
-      
+
 .Playlist .minus-symbol p {
-          margin: 0; 
-          padding-bottom: 2.8px;
-          flex-shrink: 0
-      
+  margin: 0;
+  padding-bottom: 2.8px;
+  flex-shrink: 0;
 }
 
+@media (min-width: 768px) {
+  .button-37 {
+    padding: 10px 30px;
+  }
+}
 
-
-
-
-
-
-
-                
-        
-
+@media only screen and (max-width: 850px) {
+  .Playlist {
+    width: 70%;
+    margin-left: 0;
+  }
+}

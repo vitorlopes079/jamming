@@ -1,10 +1,16 @@
-
-.Tracklist h3{
-    margin: 0;
-    padding: 0;
+.Tracklist {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.Tracklist p{
-    margin-top: 5px;
+.Tracklist h3 {
+  margin: 0;
+  padding: 0;
 }
 
+.Tracklist p {
+  margin-top: 5px;
+}

@@ -1,0 +1,117 @@
+.emailForm-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 70%;
+}
+
+.emailForm-container .simple-form {
+  padding: 20px;
+  background: black;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.emailForm-container .input-group {
+  margin-bottom: 20px;
+}
+
+.emailForm-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #b9b9b9;
+}
+
+.emailForm-container input[type="text"],
+.emailForm-container input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #4b4b4b;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.emailForm-container .button-37 {
+  background-color: #179142;
+  border: 1px solid #179142;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 20px;
+}
+
+.emailForm-container .button-37:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+.emailForm-container .button-37:disabled {
+  background-color: #cccccc;
+  border: 1px solid #aaaaaa;
+  color: #666666;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.emailForm-container .buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.message {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 3px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.message.success {
+  background-color: #179142;
+}
+
+.message.error {
+  background-color: #f44336;
+}
+
+@media only screen and (max-width: 850px) {
+  .emailForm-container label {
+    font-size: 14px;
+  }
+
+  .emailForm-container input[type="text"],
+  .emailForm-container input[type="email"] {
+    font-size: 14px;
+  }
+
+  .emailForm-container .button-37{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .emailForm-container .button-37 {
+    padding: 10px 30px;
+  }
+}
