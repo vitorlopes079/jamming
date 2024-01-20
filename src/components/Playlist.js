@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Playlist.css";
+import "../css/Playlist.css";
 import Track from "./Track";
 
 function Playlist(props) {

@@ -1,7 +1,9 @@
 import React from "react";
-import "./LandingPage.css";
+import "../css/LandingPage.css";
 import Form from "./Form";
 import { Link } from "react-router-dom";
+import Apresentation from "./Apresentation";
+
 
 const LandingPage = () => {
   return (
@@ -29,6 +31,7 @@ const LandingPage = () => {
         </p>
         <Form />
       </div>
+      <Apresentation />
     </div>
   );
 };

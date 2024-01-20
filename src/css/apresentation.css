@@ -1,0 +1,22 @@
+.aprentation-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+
+.aprentation-header{
+    padding: 4px;
+}
+
+.media-container{
+    padding: 20px;
+}
+
+.media-container img{
+    width: 100%; 
+    max-width: 900px; 
+    height: auto; 
+}
