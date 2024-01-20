@@ -1,4 +1,4 @@
-![Screenshot of Application](src/images/jammingDesktop2.png)
+![Screenshot of Application](src/images/jammingDesktop2.gif)
 
 ## Overview
 
